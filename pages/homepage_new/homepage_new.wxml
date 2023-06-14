@@ -1,0 +1,36 @@
+<view id="container">
+    <image class="top" mode="widthFix" src="../images/top_new1.png"></image>
+    <view id="content">
+        <view  class="content_left" bindtap="goToType">
+            <view class="text_01">蘑菇</view>
+            <view class="text_02">种类识别</view>
+            <image class="content_img1" src="../images/type_recognition.png"></image>
+        </view>
+        <view class="content_right" >
+            <view class="content_small" bindtap="goToQuality">
+                <view class="text_03">香菇</view>
+                <view class="text_04">品质识别</view>
+                <image class="content_img2" src="../images/checkQuality.png"></image>
+            </view>
+            <view class="content_small" bindtap="goToCondition">
+                <view class="text_03">香菇</view>
+                <view class="text_04">生长过程识别</view>
+                <image class="content_img3" src="../images/seeCondition.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="explore" bindtap="goToIntroduction">
+        <view class="explore_first" bindtap="goToIntroduction">
+            <view class="explore_01">探索蘑菇</view>
+            <image src="../images/right.png" mode="heightFix" class="right"></image>
+        </view>
+        <view class="explore_first">
+            <view class="explore_02">带你发掘更多蘑菇种类</view>
+            <image src="../images/search.png" mode="widthFix" class="search"></image>
+        </view>
+    </view>
+    <swiper indicator-dots="true" autoplay="true" circular="true">
+        <swiper-item class="pic"><image src="https://s1.ax1x.com/2022/07/30/vi9YOP.jpg" mode="widthFix" bindtap="swiper1"></image></swiper-item>
+        <swiper-item class="pic"><image src="https://s1.ax1x.com/2022/08/20/vs23Rg.jpg" mode="widthFix" bindtap="swiper2"></image></swiper-item>
+    </swiper>
+</view>

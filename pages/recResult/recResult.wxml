@@ -1,0 +1,15 @@
+<!--pages/recResult.wxml-->
+<text class="result">{{remind_msg}}\n</text>
+<view style="margin-top: 9%;">
+    <text class="remain_1">以下是为您识别出的结果</text>
+</view>
+<view class="result_container">
+    <view class="img"><image src="{{imgUrl}}" mode="aspectFill" style="width:100%;border-radius: 30rpx;height: 100%;"></image></view>
+    <text class="result_1">{{result}}</text>
+</view>
+<view class="button_containern">
+    <button type="primary" style="width: 35%;height: 100rpx;border-radius: 60rpx;margin-left: 8%;font-size: 34rpx;font-weight: 550;text-align: center;background-color: rgb(236, 115, 115);" bindtap="goToHomePage">返回首页</button>
+    <button type="primary" style="width: 35%;height: 100rpx;border-radius: 60rpx;margin-left: 10%;font-size: 34rpx;font-weight: 550;text-align: center;background-color: rgb(236, 115, 115);" bindtap="getToIntrodution">查看详情</button>
+</view>
+<view class="tip">tips:点击左上角返回可再次识别</view>
+<view class="bottom">该功能为开发者使用卷积神经网络训练而成,识别准确率依赖于训练权重，结果仅供参考</view>

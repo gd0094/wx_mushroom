@@ -1,0 +1,136 @@
+/* pages/faceManagement/faceManagement.wxss */
+page{
+    background-color:whitesmoke;
+}
+
+/*消除边框*/
+.btn[plain]{ border:0 }
+#write{
+    border-radius: 50%;
+    border: 2rpx solid #54BCBD;
+    width: 80rpx;
+    position: fixed;
+    top: 82%;
+    left: 80%;
+    z-index: 100;
+    padding:3%
+}
+.top{
+    background-color:#54BCBD;
+    width: 100%;
+    height: 100rpx;
+    margin-bottom: 10rpx;
+    position: fixed;
+}
+.search{
+    display: flex;
+}
+#search_input{
+    border: 1rpx solid #dbdbdb;
+    border-radius: 50rpx;
+    width: 500rpx;
+    height: 55rpx;
+    margin-left: 80rpx;
+    margin-top: 20rpx;
+    font-size:32rpx;
+    background-color: rgba(255, 255, 255, 0.72);
+    color: #101010;
+    padding-top: 5rpx;
+    padding-left: 30rpx;
+    float: left;
+}
+#search_icon{
+    width: 50rpx;
+    height: 50rpx;
+    margin-left: 40rpx;
+    margin-top: 27rpx;
+}
+.white{
+    background-color:white;
+    width: 100%;
+    height: 100rpx;
+    margin-bottom: 10rpx;
+}
+.content{
+    width: 98%;
+    /* height: 900rpx;  */
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.block{
+    background-color: white;
+    border-radius: 10rpx;
+    height: 370rpx;
+    width: 47%;
+    margin-left: 15rpx;
+    margin-top: 15rpx;
+    box-shadow: 4rpx 4rpx 10rpx gainsboro;
+}
+.head_view{
+    width: auto;
+    height: auto;
+    padding-top:10rpx;
+    padding-bottom: 8rpx;
+}
+.head_img{
+    width: 75rpx;
+    height: 75rpx;
+    float: left;
+    margin-left: 15rpx;
+    border-radius: 50%;
+    border:2rpx solid rgb(220, 220, 215);
+}
+.head_cha{
+    padding-left: 110rpx;
+}
+.post_time{
+    margin-top: 5rpx;
+    font-size: 23rpx;
+    color: rgb(182, 182, 182);
+}
+.nickname{
+    font-size: 32rpx;
+}
+.image_view{
+    /*border-top:1rpx solid rgb(233, 233, 229);*/
+    border-top:1rpx solid rgb(233, 233, 229);
+    margin-bottom: 3rpx;
+    margin-top: 13rpx;
+    padding-top: 8rpx;
+}
+.data{
+    font-size: 30rpx;
+}
+.commment_icon{
+    width: 25rpx;
+    height: 25rpx;
+    margin-right: 7rpx;
+    padding-left: 60rpx;
+    margin-top: 2rpx;
+}
+
+.data_icon{
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 5rpx;
+    padding-left: 270rpx;
+    margin-top: 5rpx;
+}
+
+.preview_img{
+    margin-left: 24rpx;
+    width: 300rpx;
+    height: 250rpx;
+}
+.post_title{
+    height: 45rpx;
+    margin-left: 20rpx;
+    /*以下内容是文字隐藏所必须的*/
+    display: -webkit-box;
+    word-break: break-all;/*换行规则*/
+    text-overflow: ellipsis;/*最后使用省略号显示*/
+    overflow: hidden;/*超出部分隐藏*/
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:1;/*能够显示几行*/
+}

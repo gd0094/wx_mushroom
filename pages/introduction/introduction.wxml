@@ -1,0 +1,63 @@
+<!--pages/introduction/introduction.wxml-->
+<view class="top">
+    <view class="search">
+        <input id="search_input" type="text" placeholder="请输入想要搜索的蘑菇~♪" value="{{title}}" bindinput="getsearchtitle"></input>
+        <image src="../images/mushroom.png" mode="widthFix" id="search_icon" bindtap="search"></image>
+        <view class="searchText" bindtap="search">搜索</view>
+    </view>
+</view>
+<view class="white"></view>
+<view class="cates_container">
+    <!-- 左侧菜单开始 -->
+    <scroll-view scroll-y class="left_menu" scroll-top="{{scroll-top}}" >
+        <view class="left_menu_item{{index==currentIndex ? '.active':''}}" wx:for="{{leftMenuList}}" wx:key="*this" data-index="{{index}}" bindtap="handleMenuItemChange">{{item}}
+        </view>
+    </scroll-view>
+    <!-- 左侧菜单结尾 -->
+    <!-- 右侧蘑菇详情开头 -->
+    <scroll-view scroll-y class="right_content">
+            <image class="image" src="https://cvrecognition.work/mushroom/images/mushroom/{{rightContext.images}}" mode="widthFix"></image>
+            <view class="list">
+                <view class="list_name">
+                    <view>中文名</view>
+                    <view>拉丁学名</view>
+                    <view>界</view>
+                    <view>门</view>
+                    <view>纲</view>
+                    <view>目</view>
+                    <view>科</view>
+                    <view>属</view>
+                </view>
+                <view class="list_content">
+                    <view>{{rightContext.mname}}</view>
+                    <view class="latinName">{{rightContext.latinName}}</view>
+                    <view>{{rightContext.kingdom}}</view>
+                    <view>{{rightContext.phylum}}</view>
+                    <view>{{rightContext.classes}}</view>
+                    <view>{{rightContext.orders}}</view>
+                    <view>{{rightContext.family}}</view>
+                    <view>{{rightContext.genus}}</view>
+                </view>
+            </view>
+            <view>
+                <view>
+                    <view class="title">简介：</view>
+                    <view class="content">{{rightContext.introduction}}</view>
+                </view>
+                <view>
+                    <view class="title">形态特征：</view>
+                    <view class="content">{{rightContext.feature}}</view>
+                </view>
+                <view>
+                    <view class="title">食品功效：</view>
+                    <view class="content">{{rightContext.effect}}</view>
+                </view>
+                <view>
+                    <view class="title">生活条件：</view>
+                    <view class="content">{{rightContext.conditions}}</view>
+                </view>
+            </view>
+    </scroll-view>
+    <!-- 右侧蘑菇详情结尾 -->
+    <!-- <view wx:for="{{rightContent}}" wx:key="id" wx:for-item:"content">-->
+</view>

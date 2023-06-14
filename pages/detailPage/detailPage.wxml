@@ -1,0 +1,63 @@
+<view class="main">
+    <image class="avatarUrl" src="{{post.avatarUrl}}" mode="widthFix"></image>
+    <view class="top">
+        <text class="nickName">{{post.nickName}}</text>
+        <view>
+            <image src="{{likeIcon}}" mode="widthFix" class="like" bindtap="like"></image>
+            <view class="icon_text">{{post.liked}}</view>
+            <image src="{{collectIcon}}" mode="widthFix" class="collect" bindtap="collet"></image>
+            <view class="icon_text">{{post.collected}}</view>
+        </view>
+    </view>
+    <text class="time">{{postTime}}</text>
+    <view class="title">{{post.title}}</view>
+    <view class="content">{{post.content}}</view>
+    <block wx:if="{{imgUrl}}">
+        <view  wx:for="{{imgUrl}}" class='imgBlock' data-index="{{categoryIndex}}" data-item="{{item}}" wx:key="id" wx:for-index="categoryIndex"  capture-bind:tap="showPic">
+            <!--
+            <van-image width="675rpx" height="90%" src="{{imgUrl[categoryIndex]}}" fit="cover"  />
+            -->
+            <image src="{{imgUrl[categoryIndex]}}" data-index="{{index}}" mode="widthFix" style="width: 675rpx;margin-top:2%"></image>
+        </view>
+    </block>
+    <block wx:else></block>
+<view class="comment_top">全部回复</view>
+<!-- 评论区域 -->
+<view class="commentArea">
+    <view class="commentBlock" wx:for="{{commentList}}" wx:key="id" data-item="{{item}}" wx:for-index="categoryIndex" capture-bind:tap="bindblur">
+        <view class="commentTop">
+            <image class="comment_headImg" src="{{item.avatarUrl}}" mode="widthFix"></image>
+            <view class="comment_nickName">{{item.nickName}}\n</view>
+            <view class="comment_time">{{item.createTime}}</view>
+        </view>
+        <view class="comment_content" data-categoryIndex="{{categoryIndex}}" capture-bind:tap="getCommentinfo">
+            <text bindtap="replyCommentAction">{{item.content}}</text>
+            <text>\n</text>
+            <image src="{{like_icon[categoryIndex]}}" mode="widthFix" class="comment_icon" style="width: 32rpx;" bindtap="commentlike" ></image>
+            <text>{{item.liked}}</text>
+            <image src="../images/comment_icon.png" mode="widthFix" style="margin-left: 4%;" class="comment_icon" data-categoryIndex="{{categoryIndex}}" bindtap="replyCommentAction"></image>
+            <text>{{item.childrenLength}}</text>
+        </view>
+        <view class="replyContainer" wx:if="{{item.children.length != 0}}">
+            <view wx:for="{{item.children}}" wx:key="id" data-item="{{item}}" style="margin-top: 1%;" bindtap="replyReplyAction">
+                <text class="reply_name">{{item.nickName}}</text><text class="reply_name" wx:if="{{item.answerid != 0}}"> 回复@{{item.pnickname}}</text>        
+                <text style="font-size: 29rpx;">:{{item.content}}</text>
+            </view>
+        </view>
+        <view class="line"></view>
+        <view class="comment_bottom" wx:if="{{categoryIndex == commentList.length-1}}">
+            <text>已经到底了哦^-^</text>
+        </view>
+    </view>   
+</view>
+<van-cell-group inset class="sendCommentPlace">
+    <van-field  v-model="value" value="{{commentText}}"label="发表评论："placeholder="{{placeholder}}" label-class="label" bind:change="setCommentContent" focus="{{focus}}" autofocus >
+        <button slot="button" style="width: 70rpx;;height:50rpx;" class="btn" bindtap="send">发送</button>
+    </van-field>
+</van-cell-group>
+</view>
+<!--
+<view class="sendCommentPlace">
+    <textarea id="comment_input"  type="text" auto-height="true" placeholder="{{placeholder}}" value="{{commentText}}" bindinput="setCommentContent" focus="{{focus}}" bindblur="bindblur"></textarea><text class="sendCommentButton" bindtap="send">发送</text>
+</view>
+-->

@@ -1,0 +1,121 @@
+/* pages/introduction/introduction.wxss */
+.top{
+    background-color:#54BCBD;
+    width: 100%;
+    height: 100rpx;
+    margin-bottom: 10rpx;
+    position: fixed;
+}
+.search{
+    display: flex;
+}
+#search_input{
+    border: 1rpx solid white;
+    border-radius: 30rpx;
+    width: 500rpx;
+    height: 55rpx;
+    margin-left: 25rpx;
+    margin-top: 20rpx;
+    font-size:32rpx;
+    background-color: rgba(255, 255, 255);
+    color: #101010;
+    padding-top: 5rpx;
+    padding-left: 30rpx;
+    float: left;
+}
+#search_icon{
+    width: 50rpx;
+    height: 50rpx;
+    margin-left: 25rpx;
+    margin-top: 27rpx;
+}
+.white{
+    background-color:white;
+    width: 100%;
+    height: 100rpx;
+}
+.searchText{
+    margin-top: 25rpx;
+    margin-left: 15rpx;
+    line-height: 56rpx;
+    color: white;
+    white-space: nowrap;
+}
+
+.cates_container{
+    height:1300rpx;
+    display: flex;
+}
+.left_menu{
+    flex: 2;
+    background-color: rgb(250, 250, 250);
+}
+.left_menu_item{
+    margin-top: 10rpx;
+    height: 80rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30rpx;
+}
+.left_menu_item.active{
+    font-weight: bolder;
+    color:#54BCBD;
+    border-left: 8rpx solid #54BCBD;
+}
+.right_content{
+    flex: 5;
+}
+.image{
+    width: 100%;
+    margin:0;
+}
+.list{
+    margin-right: 1%;
+}
+.list_name{
+    margin:0;
+    height: auto;
+    width: auto;
+    float: left;
+    padding: 4%;
+    background-color: rgb(247, 247, 247);
+    line-height: 60rpx;
+    text-align: center;
+    font-size: 30rpx;
+}
+
+.list_content{
+    margin:0;
+    height: 40%;
+    width: 61%;
+    float: left;
+    padding: 4%;
+    background-color: rgb(251, 251, 251);
+    line-height: 60rpx;
+    font-size: 30rpx;
+}
+
+.title{
+    font-size: 38rpx;
+    margin-top:4%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+
+}
+.content{
+    font-size: 30rpx;
+    text-indent:60rpx;
+    color:hsl(0, 0%, 4%);
+    line-height: 45rpx;
+    margin-left: 1%;
+}
+.latinName{
+    /*以下内容是文字隐藏所必须的*/
+    display: -webkit-box;
+    word-break: break-all;/*换行规则*/
+    text-overflow: ellipsis;/*最后使用省略号显示*/
+    overflow: hidden;/*超出部分隐藏*/
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:1;/*能够显示几行*/
+}

@@ -1,0 +1,35 @@
+/* pages/history/history.wxss */
+page{
+    background-color:whitesmoke;
+}
+.view{
+    background-color: white;
+    width: 710rpx;
+    height: 220rpx;
+    box-shadow: 4rpx 4rpx 10rpx gainsboro;
+    margin:2%;
+    border-radius: 15rpx;
+
+}
+.image{
+    width: 300rpx;
+    height: 200rpx;
+    float: left;
+    padding-top: 10rpx;
+    padding-left:10rpx;
+    
+}
+.text{
+    float: left;
+    width: 200rpx;
+    height: 150rpx;
+    margin-left: 20rpx;
+    margin-top:10rpx;
+    font-size:40rpx;
+}
+.time{
+    float: left;
+    height: 50rpx;
+    margin-left: 20rpx;
+    font-size:28rpx;
+}

@@ -1,0 +1,25 @@
+<!--pages/personalCenter/myArticle/myArticle.wxml-->
+
+<view>
+    <view class="viewRectangle" wx:for="{{collectList.data}}" wx:key="id" bindtap="detail" data-item="{{item}}" wx:for-index="categoryIndex">
+        <image src='{{item.avatarUrl}}' class="head_img"></image>
+        <view class="head">
+            <view class="text1">{{item.nickName}}</view>
+            <view class="text2">{{item.createTime}}</view>
+            <image src="../images/more.png" class="more" mode="widthFix" bindtap="more"></image>
+        </view>
+       
+        <view class="content" bindtap="goToDetail">
+            <view class="title">{{item.title}}</view>
+            <image src="{{perviewImgList[categoryIndex]}}" mode="aspectFit" class="image"></image>
+        </view>
+        <view>
+            <image class="bottomimage" src="../images/collect_num.png" mode="scaleToFill"></image>
+            <view class="bottomtext">{{item.collected}}</view>
+            <image class="commentimage" src="../images/comment_icon.png" mode="scaleToFill"></image>
+            <view class="bottomtext">{{item.comments == null ? 0 : item.comments}}</view>
+            <image class="bottomimage" src="../images/like.png" mode="scaleToFill"></image>
+            <view class="bottomtext">{{item.liked}}</view>
+        </view>
+    </view>
+</view>

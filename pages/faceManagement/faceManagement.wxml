@@ -1,0 +1,16 @@
+<!--pages/faceManagement/faceManagement.wxml-->
+<button class="btn" plain bindtap="handleClick">录入人脸信息</button>
+<view class="content">
+    <view class="block" 
+        wx:for="{{faceList}}" 
+        wx:key="id" 
+        >
+        <image class="data_icon" src="../images/delete.png" mode="widthFix" bindtap="delFace" data-item="{{item}}" ></image>
+        <view class="image_view">
+            <image class="preview_img" mode="aspectFit" src="https://cvrecognition.work/mushroom/images/{{item}}.jpg"></image>
+        </view>
+
+    </view>
+
+   
+</view>

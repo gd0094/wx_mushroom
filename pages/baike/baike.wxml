@@ -1,0 +1,3 @@
+<!--pages/baike/baike.wxml-->
+    <image src="https://s1.ax1x.com/2022/06/03/XNha1U.jpg" mode="widthFix" style="width: 100%;"></image>
+    <image src="https://s1.ax1x.com/2022/06/03/XNhUpT.jpg" mode="widthFix" style="width: 100%;" bindtap="showTable"></image>

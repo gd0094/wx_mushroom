@@ -1,0 +1,8 @@
+{
+    "usingComponents": {},
+    "navigationBarTitleText": "论坛",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#FFFFFF",
+    "backgroundTextStyle": "dark",
+    "onReachBottomDistance": 100
+}

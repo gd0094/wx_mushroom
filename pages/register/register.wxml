@@ -1,0 +1,40 @@
+<!--pages/register/register.wxml-->
+<text class="top">欢迎来到菇识</text>
+<view class="out_view">
+    <view class="input_view">
+        <image src="../images/yb.png" class="icon"></image>
+        <text class="line1">|</text>
+        <input class="input_word" placeholder="请输入易班账号" bindinput="yb_getname" type="text"></input>
+    </view>
+    <view class="input_view">
+        <image src="../images/password.png" class="icon"></image>
+        <text class="line1">|</text>
+        <input class="input_word" placeholder="请输入密码" bindinput="yb_getpassword" type="password" ></input>
+    </view>
+
+   <view class="text_view">
+        <text>未注册过易班账号请使用其他登录方式</text>
+   </view>
+
+   <button type="primary" class="register_button" bindtap="yb_login">易班登录</button>
+   <view class="text_view">
+       <text class="tourist_text">其他登录方式</text>
+   </view>
+
+   <view class="button_view">
+        <button class="icon_view" plain="true" style="height: 160rpx;width: auto;" open-type="getUserInfo" bindtap="wx_login">
+            <image class="button_icon"  src="../images/wx.png"></image>
+            <navigator>微信</navigator>
+        </button>
+        <text class="line2">|</text>
+        <button class="icon_view" plain="true" style="height: 160rpx;width: auto;" bindtap="faceLogin">
+            <image class="button_icon" src="../images/face.png"></image>
+            <navigator>人脸</navigator>
+        </button>
+   </view>
+</view>
+<view class="agreement_view">
+    <text>登录即同意  用户协议</text>
+</view>
+
+

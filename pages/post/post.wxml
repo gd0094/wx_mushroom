@@ -1,0 +1,24 @@
+<text >\n</text>
+<form bindsubmit="formSubmit" id='1' bindreset="formReset">    
+<view class="item">
+    <view class="item_title">主题</view>
+    <textarea id="title" maxlength="0" show-confirm-bar="" placeholder="(必填)请输入主题" auto-height='true' bindinput="titleInput"></textarea>
+</view>
+<view class="home-header-line"></view>
+<view class="item">
+    <view class="item_title">内容</view>
+    <textarea id="content" maxlength="0" show-confirm-bar="" placeholder="(必填)请输入内容" style="height: 360rpx;" bindinput="contentInput"></textarea>
+</view>
+<view class="home-header-line"></view>
+<view class="imgbox">
+   <block wx:for="{{images}}" wx:key="this">
+      <view class="add">
+         <image class="gallary" src="{{item}}" data-idx="{{index}}" mode="heightFix" bindtap="handleImagePreview"></image>
+         <view class="delete" data-idx="{{index}}" bindtap="removeImage">删除</view>
+      </view>
+   </block>
+   <image class="addImg" src="../images/uploadImg.png" bindtap="chooseImage" mode="heightFix"></image>
+</view>
+<view class="home-header-line"></view>
+      <button class='btn' formType="submit">确定</button>    
+</form>  

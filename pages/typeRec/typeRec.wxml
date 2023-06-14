@@ -1,0 +1,59 @@
+<!-- camera.wxml -->
+<camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 100%; position: relative; left: 0rpx; top: 2rpx">
+    <view style="height: 75%;">
+        <view class="detail">
+            <view style="display: flex;">
+                <!-- 空气湿度{{weather.now.hum}}% 气压{{weather.now.pres}}hPa -->
+                <!-- <image class="getWeatherMsg" src="../images/getWeather.png" mode="widthFix" bindtap="showWeather" ></image> -->
+                <image class="getWeatherMsg" mode="widthFix"></image>
+                <image class="usingMsg" src="{{useMsgPic}}" mode="widthFix" bindtap="toggleDialog1"></image>
+            </view>
+        </view>
+        <!-- <view class="weat" wx:if="{{showWeather}}">
+            <view style="width:500px;">
+                <view class="location">
+                    <view>{{city}}・{{district}}・{{street}}</view>
+                </view>
+                <view class="temp">{{weather.now.tmp}}℃
+                    <text>{{weather.now.cond_txt}}</text>
+                </view>
+                <view class="humid">
+                <view class="label">
+                    {{weatherAir.air_now_city.aqi}}{{weatherAir.air_now_city.qlty}}
+                </view>
+   
+      <view>{{weather.now.wind_dir}}{{weather.now.wind_sc}}级 湿度{{weather.now.hum}}% 气压{{weather.now.pres}}hPa</view> //手机上的显示成功换行了
+
+    </view>
+  </view>
+  <view class="sun">
+    <image src="{{weatherIconPic}}"></image>
+  </view>
+        </view> -->
+        <view class="tip1">
+            <view class="txt_View_New">请将蘑菇放在屏幕中间拍摄</view> 
+        </view>
+        </view>
+    <view class="zan-dialog {{ showDialog ? 'zan-dialog--show' : '' }}">
+        <!-- 如果想点击弹窗外不隐藏，取消bindtap点击事件即可 -->
+            <view class="zan-dialog__mask" bindtap="toggleDialog" />
+            <view class="zan-dialog__container">
+            <view>
+                <!-- 这里是弹窗的布局 -->
+                <view style="height: 10px;"></view>
+                <view class="txt_View" style="color: red;">请注意</view> 
+                <view class="txt_View">该窗口功能为识别蘑菇种类</view> 
+                <view class="txt_View">我们可识别出的蘑菇种类在不断更新</view> 
+                <view class="txt_View">(点击弹窗外任意位置关闭弹窗)</view>
+            </view>
+            </view>
+    </view>
+    <cover-view style="display:flex;flex-direction:row; justify-content:space-around;">
+        <cover-image src="../images/photo.png" style="width:70px;height:70px;" bindtap="choosePhoto"></cover-image>
+        <cover-image src="../images/TakePhoto.png" style="width:70px;height:70px;" bindtap="takePhoto"></cover-image>
+    </cover-view>
+</camera>
+  
+   
+ 
+ 

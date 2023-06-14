@@ -1,0 +1,6 @@
+<!--pages/history/history.wxml-->
+<view class="view" wx:for="{{history}}"  wx:key="id" data-item="{{item}}" bindtap="goToDetail">
+    <image src="https://cvrecognition.work/mushroom/images/{{item.image}}" class="image"></image>
+    <view class="text">{{item.result}}</view>
+    <view class="time">{{item.createTime}}</view>
+</view>

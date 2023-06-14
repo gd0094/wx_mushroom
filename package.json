@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@vant/weapp": "^1.10.4",
+    "miniprogram-sm-crypto": "^0.3.10",
+    "vant": "^3.5.4"
+  },
+  "devDependencies": {
+    "unplugin-vue-components": "^0.22.4"
+  }
+}

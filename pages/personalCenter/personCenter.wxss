@@ -1,0 +1,102 @@
+/* pages/personalCenter/personCenter.wxss */
+page{
+    background-color: #F0EFF3;
+}
+.background{
+    width: 750rpx;
+    height: 260rpx;
+    float: left;
+    position: absolute;
+}
+.head{
+    width: 150rpx;
+    height: 150rpx;
+    float: left;
+    margin-left: 55rpx;
+    margin-top: 55rpx;
+    border-radius: 50%;
+    border: 1rpx;
+    border:5rpx solid white;
+    position: absolute;
+}
+.name{
+    color:white;
+    float:left;
+    font-size: 45rpx;
+}
+.grew{
+    background-color: #F0EFF3;
+    width: 750rpx;
+    height: 1300rpx;
+}
+.rectangle{
+    background-color: white;
+    width: 685rpx;
+    height: 75%;
+    border-radius: 10%;
+    position: absolute;
+    margin-top: 220rpx;
+    margin-left: 30rpx;
+}
+.textview{
+    width: 600rpx;
+    height: 10rpx;
+    margin-top: 20rpx;
+    margin-left: 75rpx;
+    float: left;
+}
+.divLine{
+    background: #f1f1f1ec;
+    width: 580rpx;
+    height: 3rpx;
+    margin-top: 50rpx;
+    margin-left: 50rpx;
+    float: left;
+}
+.image{
+    width: 35rpx;
+    height: 35rpx;
+    float: left;
+    margin-top: 6rpx;
+}
+.text{
+    float: left;
+    width: 500rpx;
+    height: 35rpx;
+    margin-left: 15rpx;
+}
+.textviewtop{
+    width: 339rpx;
+    height: 150rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+.textviewline{
+    float: left;
+    width: 2rpx;
+    height: 100rpx;
+    background: #F1F1F1;
+    margin-top: 25rpx;
+}
+.texttop{
+    width: 150rpx;
+    display: block;
+    text-align: center;
+}
+.text_button{
+    top: 90rpx;
+    position: relative;
+}
+/*消除边框*/
+.text_button[plain]{ border:0 }
+
+.bottom{
+    margin-left: 230rpx;
+    position: absolute;
+    top:90%;
+    font-size: 28rpx;
+    color: gray;
+    
+}

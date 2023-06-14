@@ -1,0 +1,74 @@
+.result{
+    font-size: 36rpx;
+    font-weight: 700;
+    margin-left: 6%;
+    margin-top: 2%;
+}
+.result_1{
+    width: 35%;
+    font-size: 36rpx;
+    font-weight: 700;
+    margin-left: 10%;
+    margin-top: 17%;
+    color: rgb(236, 115, 115);
+    text-align: center;
+}
+.remain_1{
+    margin-left: 6%;
+    font-size: 35rpx;
+    color: rgb(236, 115, 115)
+}
+.result_container{
+    margin-top: 8%;
+    margin-left: 5%;
+    width: 90%;
+    height: 300rpx;
+    box-shadow:0rpx 7rpx 7rpx 7rpx #c8c3c3;
+    border-radius: 30rpx;
+    display: flex;
+    border: 2rpx solid rgb(236, 115, 115);
+}
+.img{
+    border-radius: 30rpx;
+    width: 40%;
+    height: 94%;
+    margin-left: 10%;
+    margin-top: 1.5%;
+}
+.button_containern{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20%;
+}
+button{
+    width: 35%;
+    height: 100rpx;
+    border-radius: 60rpx;
+    margin-left: 10%;
+    font-size: 34rpx;
+    font-weight: 550;
+    /* 以下内容可以使得view中的文字居中 */
+    display: flex;   
+    align-items: center;    
+    justify-content: center; 
+}
+.tip{
+    margin-top: 25%;
+    margin-left: 5%;
+    width: 90%;
+    display: flex;   
+    align-items: center;    
+    justify-content: center;
+    color: darkgray;
+}
+.bottom{
+    margin-top: 25%;
+    margin-left: 5%;
+    width: 90%;
+    display: flex;   
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    color: darkgray;
+}

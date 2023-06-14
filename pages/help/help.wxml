@@ -1,0 +1,24 @@
+<!--pages/help/help.wxml-->
+<view>
+    <view class="top">
+        <image class="help_icon" src="../images/help_icon.png"></image>
+        <view class="text">联系开发者</view>
+        <button  type="primary" class="btn" style="width: 200rpx;height: 55rpx;" bindtap="formSubmit">提交</button>
+    </view>
+    <textarea placeholder="您在使用过程中遇到任何问题，可将问题详细描述，必要时配上截图反馈给开发者。" class="textarea" bindinput="contentInput"></textarea>
+    <view class="img-wrap">
+        <text class="sign">上传图片</text>
+        <view class="imgbox">
+            <block wx:for="{{images}}" wx:key="this">
+                <view class="add_view2">
+                    <image class="gallary" src="{{item}}" data-idx="{{index}}" mode="heightFix" bindtap="handleImagePreview"></image>
+                    <view class="delete" data-idx="{{index}}" bindtap="removeImage">删除</view>
+                </view>
+            </block>
+            <view class="add_view1" bindtap="chooseImage">
+                <image class="add" src="../images/addimg1.png"  mode="heightFix"></image>
+            </view>
+            
+        </view>
+    </view>
+</view>

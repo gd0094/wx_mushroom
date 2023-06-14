@@ -1,0 +1,9 @@
+<!--pages/result/result.wxml-->
+<view class="container">
+    <view class="show">
+        <image src="{{url}}" class="main" mode="widthFix"></image>
+    </view>
+    <view class="backImg">
+        <image src="../images/background.png" class="main" mode="scaleToFill"></image>
+    </view>
+</view>

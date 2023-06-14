@@ -1,0 +1,42 @@
+<!--pages/personalCenter/personCenter.wxml-->
+<view>
+    <image src='../images/centerBackground.png' class="background"></image>
+    <image  v-if="{{avatarUrl}}" src='{{avatarUrl}}' class="head"></image>
+    <button class="text_button" plain="true" style="height: 100rpx;width: 350rpx;">
+        <text class="name">{{nickName}}</text>
+    </button>
+</view>
+<view class="rectangle">
+    <view class="textviewtop" bindtap="goToMyArticle">
+        <text class="texttop">我的文章\n{{myposts}}</text>
+    </view>
+    <view class="textviewline"></view>
+    <view class="textviewtop" bindtap="goToMyCollect">
+        <text class="texttop">收藏文章\n{{favoriteposts}}</text>
+    </view>
+    <view class="textview" bindtap="goToHelp">   
+        <image src="../images/service.png" class="image"></image>
+        <text class="text">帮助反馈</text>
+    </view>
+        <!-- 分割线 -->
+        <view class="divLine"></view>
+    <view class="textview" bindtap="goToHistory">   
+        <image src="../images/record.png" class="image"></image>
+        <text class="text">识别记录</text>
+    </view>
+         <!-- 分割线 -->
+         <view class="divLine"></view>
+    <view class="textview" bindtap="goToFaceManage">   
+        <image src="../images/face_icon.png" class="image"></image>
+        <text class="text">人脸管理</text>
+    </view>
+         <!-- 分割线 -->
+         <view class="divLine"></view>
+    <view class="textview" bindtap="quit">   
+        <image src="../images/quit.png" class="image"></image>
+        <text class="text">退出登录</text>
+    </view>
+    <view class="bottom">
+        <text>Made by 香菇炖鸡\nFrom 华南农业大学</text>
+    </view>
+</view>

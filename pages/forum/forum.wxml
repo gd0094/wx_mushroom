@@ -1,0 +1,38 @@
+<view class="top">
+    <!-- 搜索栏 -->
+    <view class="search">
+        <input id="search_input" type="text" placeholder="请输入关键词搜索相关帖子" value="{{title}}" bindinput="getsearchtitle"></input>
+        <image src="../images/search_icon.png" mode="widthFix" id="search_icon" bindtap="search"></image>
+    </view>
+</view>
+<!-- 布局需要的隔层 -->
+<view class="white"></view>
+<!-- 帖子外壳 -->
+<view class="content">
+    <!-- 单个帖子 -->
+    <view class="block" wx:for="{{postList}}" wx:key="id" bindtap="goToDetail" data-item="{{item}}" wx:for-index="categoryIndex">
+        <!-- 头像 昵称 时间 -->
+        <view class="head_view">
+            <image class="head_img" src="{{item.avatarUrl}}" mode="widthFix"></image>
+            <view class="head_cha" >
+              <view class="nickname">{{item.nickName}}</view>
+                <view class="post_time">{{item.createTime}}</view>
+            </view>
+        </view>
+        <text class="post_title">{{item.title}}</text>
+        <view class="image_view">
+            <image class="preview_img" mode="aspectFit" src="{{perviewImgList[categoryIndex]}}"></image><text>\n</text>
+        </view>
+        <!-- 帖子的数据(点赞 收藏 评论) -->
+        <view class="data">
+            <image class="data_icon" src="../images/collect_num.png" mode="widthFix" ></image>{{item.collected}}
+            <image class="commment_icon" src="../images/comment_icon.png" mode="widthFix"></image>{{item.comments == null ? 0 : item.comments}}
+            <!-- 当comments为null时 页面显示数字为0 -->
+            <image class="data_icon" src="../images/like.png" mode="scaleToFill"></image>{{item.liked}}
+        </view>
+    </view>
+</view>
+    <!--发帖icon -->
+<view class="write_view">
+    <image src="../images/write2.png" mode="widthFix" id="write" bindtap="goToPost"></image>
+</view>

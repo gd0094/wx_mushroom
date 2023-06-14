@@ -1,0 +1,79 @@
+{
+    "pages": [
+        "pages/homepage_new/homepage_new",
+        "pages/recResult/recResult",    
+        "pages/personalCenter/personCenter",
+        "pages/forum/forum",
+        "pages/register/register",
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/result/result",
+        "pages/index1/index",
+        "pages/condition/condition",
+        "pages/baike/baike",
+        "pages/typeRec/typeRec",
+        "pages/myArticle/myArticle",
+        "pages/myCollect/myCollect",
+        "pages/help/help",
+        "pages/history/history",
+        "pages/faceManagement/faceManagement",
+        "pages/post/post",
+        "pages/detailPage/detailPage",
+        "pages/introduction/introduction"
+    ],
+    "subpackages": [
+        {
+            "root": "packageA",
+            "pages": [
+                "pages/result/result"
+            ]
+        }
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "香菇识别",
+        "navigationBarTextStyle": "black"
+    },
+    "requiredPrivateInfos":[
+        "getLocation"
+    ],
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents",
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置接口的效果展示"
+        }
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/homepage_new/homepage_new",
+                "text": "首页",
+                "iconPath": "./packageA/images/homepage.png",
+                "selectedIconPath": "./packageA/images/homepage1.png"
+            },
+            {
+                "pagePath": "pages/forum/forum",
+                "text": "论坛",
+                "iconPath": "./packageA/images/forum.png",
+                "selectedIconPath": "./packageA/images/forum1.png"
+            },
+            {
+                "pagePath": "pages/personalCenter/personCenter",
+                "text": "我的",
+                "iconPath": "./packageA/images/personCenter.png",
+                "selectedIconPath": "./packageA/images/personCenter0.png"
+            }
+        ]
+    },
+    "usingComponents": {
+        "van-button":"@vant/weapp/button/index",
+        "van-cell-group":"@vant/weapp/cell-group/index",
+        "van-field":"@vant/weapp/field/index",
+        "van-image":"@vant/weapp/image/index",
+        "van-loading":"@vant/weapp/loading/index"
+       
+    }
+}

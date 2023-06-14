@@ -1,0 +1,110 @@
+/* pages/register/register.wxss */
+/*顶部文字*/
+.top{
+    top: 250rpx;
+    margin-left: 250rpx;
+    font-size: 45rpx;
+    color:#1aca6c;
+    position: relative;
+}
+.out_view{
+    margin-left: 110rpx;
+    margin-top:290rpx;
+    width: 550rpx;
+    height: auto;
+    position: absolute;
+}
+/**********************输入框*********************/
+.input_view{
+    margin-top:60rpx;
+    height: 80rpx;
+    background-color: rgb(241, 241, 241);
+    border-radius:50rpx
+}
+/*图标*/
+.icon{
+    width: 40rpx;
+    height: 40rpx;
+    float: left;
+    margin-top: 20rpx;
+    margin-left: 29rpx;
+}
+/*竖线*/
+.line1{
+    color:gainsboro;
+    float:left;
+    margin-top: 18rpx;
+    margin-left: 17rpx;
+}
+
+/*文字*/
+.input_word{
+    padding-top: 18rpx;
+    padding-left: 20rpx;
+    font-size: 28rpx;
+    float: left;
+    width: 200rpx;
+}
+
+/*按钮*/
+.input_button{
+    float: right;
+    margin-top:8rpx;
+    border-radius:50rpx;
+}
+/**********************提示文字*********************/
+.text_view{
+    margin-top:30rpx;
+    font-size: 20rpx;
+    text-align: center;
+    display: block;
+    color:rgb(196, 194, 194);
+}
+.tourist_text{
+    margin-top:10rpx;
+    font-size: 20rpx;
+    text-align: center;
+    display: block;
+    color:rgb(196, 194, 194);
+}
+/**********************登录按钮*********************/
+.register_button{
+    margin-top:60rpx;
+    border-radius:50rpx;
+    /*按钮大小待调*/
+}
+/*********************微信易班按钮******************/
+.button_view{
+    margin-top:20rpx;
+    margin-left: 140rpx;
+    width: 300rpx;
+}
+.icon_view{
+    font-size: 18rpx;
+    float: left;
+}
+/*消除边框*/
+.icon_view[plain]{ border:0 }
+
+.button_icon{
+    width: 35rpx;
+    height: 35rpx;
+    margin-top:10rpx;
+    margin-bottom:8rpx;
+}
+.line2{
+    color:gainsboro;
+    float:left;
+    margin-top: 18rpx;
+    margin-left: 5rpx;
+}
+
+/**********************用户协议*********************/
+.agreement_view{
+    margin-top:1000rpx;
+    margin-left: auto;
+    font-size: 20rpx;
+    text-align: center;
+    display: block;
+    color:rgb(196, 194, 194);
+}

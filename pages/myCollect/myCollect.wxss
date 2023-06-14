@@ -1,0 +1,88 @@
+/* pages/personalCenter/myArticle/myArticle.wxss */
+page{
+    background:#F0EFF3;
+}
+.viewRectangle{
+    width: 750rpx;
+    height: 610rpx;
+    background-color: white;
+    border-top: 1rpx solid rgb(243, 240, 240);
+
+}
+.head{
+    margin-top: 5rpx;
+}
+
+.head_img{
+    width: 100rpx;
+    height: 100rpx;
+    float: left;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+    border-radius: 50%;
+    border: 1rpx;
+    border:5rpx solid white;
+    
+}
+.text1{
+    float: left;
+    height: 30rpx;
+    width: 300rpx;
+    margin-left: 20rpx;
+    margin-top: 30rpx;
+    font-size: 35rpx;
+    
+}
+.text2{
+    color: rgb(182, 182, 182);
+    float: left;
+    height: 30rpx;
+    width: 400rpx;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+    font-size: 30rpx;
+}
+.more{
+    width: 50rpx;
+    float: right;    
+    margin-right: 30rpx;
+    padding-bottom:10rpx ;
+}
+.title{
+    margin-top: 20rpx;
+    margin-bottom: 10rpx;
+    margin-left: 30rpx;
+    float: left;
+    height: 50rpx;
+    width: 750rpx;
+    
+}
+.image{
+    height: 320rpx;
+    margin-left: 20rpx;
+}
+.bottomimage{
+    margin-left: 100rpx;
+    margin-top: 19rpx;
+    padding-right: 2rpx;
+    width: 35rpx;
+    height: 35rpx;
+    float: left;
+}
+.commentimage{
+    margin-left: 100rpx;
+    margin-top: 23rpx;
+    padding-right: 2rpx;
+    width: 30rpx;
+    height: 30rpx;
+    float: left;
+}
+.bottomtext{
+    margin-left: 10rpx;
+    margin-top: 15rpx;
+    width: 100rpx;
+    float: left;
+}
+.content{
+    margin-left: 20rpx;
+}
